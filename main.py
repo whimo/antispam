@@ -13,10 +13,10 @@ def learn (sample_filename = "sample.txt"):
 	with open (sample_filename) as sample:
 		for word in sample:
 			for i in range (len (word) - 1):
-				if not ((word [i]).isalpha () and (word [i + 1]).isalpha ()):
-					continue;
-
-				add_pair ((word [i] + word [i + 1]).lower ()) # Add a two-letter combination
+				pair = ''.join ([word [i + j].lower () for j in range (2)])
+				
+				if pair.isalpha ():
+					add_pair (pair) # Add a two-letter combination
 
 
 
@@ -57,6 +57,7 @@ def main ():
 	string = str (input ())
 
 	print ('String humanity index:', rate (string))
+	
 
 if __name__ == '__main__':
 	main ()
