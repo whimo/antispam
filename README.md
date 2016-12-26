@@ -6,12 +6,22 @@ When processing a string, the algorythm compares letter combinations and rates i
 
 The sample text should be saved with UTF-8 encoding.
 
-```
-whimo@wml:~/Documents/antispam$ python3 main.py
-The first rule of the Fight Club: you don't talk about Fight Club.
-String humanity index: 4109
+It is preferable to use Python3 because it has better unicode support.
 
-whimo@wml:~/Documents/antispam$ python3 main.py
-HRsfknv spb sfibn aeoSdfbn sodj
-String humanity index: 200
+
+Here is an example of using the program to analyze a string (learnt on "David Copperfield"):
+```
+whimo@wml:~/Documents/antispam$ python3 demo.py
+Enter filename of you sample text:
+sample.txt
+
+The program has learned letter combinations of sample text.
+Now let's start.
+Enter the string you want to check (or "quit"):
+The first rule of the Fight Club: you don't talk about Fight Club.
+Humanity rating of your string: 542
+
+Enter the string you want to check (or "quit"):
+HRsfknv spb sfibn aeoSdfbn sodj.
+Humanity rating of your string: 1
 ```
