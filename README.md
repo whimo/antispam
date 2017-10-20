@@ -12,7 +12,7 @@ It is preferable to use Python3 because it has better unicode support.
 Here is an example of using the program to analyze a string (learnt on "David Copperfield"):
 ```
 whimo@wml:~/Documents/antispam$ python3 demo.py
-Enter filename of you sample text:
+Enter filename of your sample text:
 sample.txt
 
 The program has learned letter combinations of sample text.
